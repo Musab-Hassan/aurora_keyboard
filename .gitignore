@@ -7,6 +7,9 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+#Lock files
+*.lock
+
 # System files
 *:Zone.Identifier
 .DS_Store

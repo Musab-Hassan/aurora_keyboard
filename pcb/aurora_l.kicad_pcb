@@ -8,7 +8,7 @@
 	)
 	(paper "A3")
 	(title_block
-		(title "Aurora Keyboard")
+		(title "Aurora Keyboard Left")
 		(date "2024-10-15")
 		(rev "v1.0.0")
 		(company "Designed by Musab")
