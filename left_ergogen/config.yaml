@@ -160,17 +160,28 @@ pcbs:
         where: true
         adjust:
           rotate: 0
-          shift: [ 0, -7 ]
+          shift: [ 0, -8 ]
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
           # via_in_pad: true
           # through_hole: false
-      rgb_led:
+      rgb_led_even:
         what: WS2812-2020
-        where: true
+        where: [/^(matrix_.*_num).*/, /^(matrix_.*_home).*/, /^(modrow).*/]
         adjust:
-          shift: [ 0, -4 ]
+          shift: [ 0, -5 ]
+        params:
+          din: "P8"
+          vcc: "VCC"
+          dout: "P15"
+          gnd: "GND"
+      rgb_led_rotate_odd:
+        what: WS2812-2020
+        where: [/^(matrix_.*_top).*/, /^(matrix_.*_bottom).*/]
+        adjust:
+          rotate: -90
+          shift: [ 0, -5 ]
         params:
           din: "P8"
           vcc: "VCC"
@@ -220,3 +231,18 @@ pcbs:
           pos: BAT
           neg: GND
           side: B
+      hole_top_center:
+        what: mountinghole
+        where:
+          ref: matrix_three_num
+          shift: [0.7cx, 1.2cy]
+      hole_top_right:
+        what: mountinghole
+        where:
+          ref: matrix_six_num
+          shift: [-0.3cx, 0.7cy]
+      hole_bottom_left:
+        what: mountinghole
+        where:
+          ref: modrow_ctrl_modrow
+          shift: [-0.8cx, -0.3cy]

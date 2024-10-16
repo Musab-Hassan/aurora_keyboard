@@ -4343,6 +4343,77 @@
 			(uuid "a9dfe4f7-360b-48ee-bb65-7e04b9cd79f3")
 		)
 	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "297a2a03-2f4f-4157-8cda-e6b23268362f")
+		(at 103.6 102.6)
+		(property "Reference" ""
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "78d18000-a6c6-4a6d-b9b6-ebd8f9a7d0b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "c1c84734-7040-41c2-82f7-1531e6cb44e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a20291c-c361-40f4-888d-61d7fba84b3a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f602831b-702e-4444-9e87-2782a5c6dc87")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f2aa2b3-380e-4f32-aa8f-56eb545721b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0 90)
+			(size 4 4)
+			(drill 4)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(clearance 0.3)
+			(uuid "a749054d-6789-40c0-8dda-c4f800fe8291")
+		)
+	)
 	(footprint "ComboDiode"
 		(layer "F.Cu")
 		(uuid "2d6b6510-feee-4d85-8750-4649b5e48dc3")
@@ -12419,6 +12490,77 @@
 			(uuid "112f7644-4f37-4125-8865-451360035b49")
 		)
 	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "9099e6dd-c503-4c32-b822-fef3d1bad683")
+		(at 42.85 196.1)
+		(property "Reference" ""
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "b402d7d4-754b-4123-bc22-c0f034797fcd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "97aff5aa-aec5-4def-8ba3-46ab7442a00d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb59e2cd-78d0-4286-b5c1-b0aa49b10fd2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a745b6c-7fc4-4588-baad-a2b8c5fd4fff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ca3f78b-1576-47b8-9b97-9051cad704ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0 90)
+			(size 4 4)
+			(drill 4)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(clearance 0.3)
+			(uuid "8a3710ce-80cb-406d-b3b7-51b7bae5dab6")
+		)
+	)
 	(footprint "WS2812-2020"
 		(layer "F.Cu")
 		(uuid "90f08998-07ce-4551-ac08-bd29537648b7")
@@ -17018,6 +17160,77 @@
 			(remove_unused_layers no)
 			(net 5 "one_num")
 			(uuid "cf95a104-8175-4dd4-9716-aa0a0bbea277")
+		)
+	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "c1da770c-25f0-40f0-ab5c-eac28a5b8fd8")
+		(at 139.6 111.1)
+		(property "Reference" ""
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "e9f83c6b-4ccd-4e25-a523-7bef957c183d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "72281b56-5ce5-4077-acb4-6ac95279a968")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e02e504-f2dd-4157-b12e-a801ab3d123a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c93327e-e42e-432b-a793-2a2bba52fa70")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4542875a-7842-4e06-b7c5-cc957600926a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0 90)
+			(size 4 4)
+			(drill 4)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(clearance 0.3)
+			(uuid "49057771-ff32-4514-97af-db0a87fe0075")
 		)
 	)
 	(footprint "ComboDiode"
@@ -24565,28 +24778,28 @@
 		(uuid "378e9761-5b8f-4868-8843-22f5c6f6cb35")
 	)
 	(segment
-		(start 135.5 158.81)
-		(end 135.5 114)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 36)
-		(uuid "3fcd814d-0285-4395-8177-d57eb0f71a40")
-	)
-	(segment
-		(start 126.105 104.605)
-		(end 70.855 104.605)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 36)
-		(uuid "464d4a01-4c4f-447b-a3bc-ffe7abc99899")
-	)
-	(segment
 		(start 135.5 114)
-		(end 126.105 104.605)
+		(end 135.5 158.81)
 		(width 0.25)
 		(layer "B.Cu")
 		(net 36)
-		(uuid "5aa9486f-d425-4bd9-90a8-347572c052f6")
+		(uuid "43405397-ba99-49ef-ae01-2c2f1771d72f")
+	)
+	(segment
+		(start 135.5 158.81)
+		(end 141.19 164.5)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 36)
+		(uuid "45c70ef0-69d2-4f0c-a252-34929b4ab65f")
+	)
+	(segment
+		(start 73.75 107.5)
+		(end 129 107.5)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 36)
+		(uuid "8a370cc0-416b-4eb8-bf9a-702a3609f75b")
 	)
 	(segment
 		(start 51.19 164.5)
@@ -24597,28 +24810,28 @@
 		(uuid "94fd8b89-d280-42e4-beeb-52c51af6836d")
 	)
 	(segment
+		(start 129 107.5)
+		(end 135.5 114)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 36)
+		(uuid "974fadff-341a-478b-b668-36b132535a32")
+	)
+	(segment
+		(start 61.51 95.26)
+		(end 73.75 107.5)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 36)
+		(uuid "a6e3b31e-ced6-448c-bdde-ae8fc919e3eb")
+	)
+	(segment
 		(start 123.19 164.5)
 		(end 125.35 164.5)
 		(width 0.25)
 		(layer "B.Cu")
 		(net 36)
 		(uuid "ce395c75-6e15-4037-9b9a-33973c91aa44")
-	)
-	(segment
-		(start 70.855 104.605)
-		(end 61.51 95.26)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 36)
-		(uuid "d2eaa99f-76e7-44e1-9c2d-190d2779c99b")
-	)
-	(segment
-		(start 141.19 164.5)
-		(end 135.5 158.81)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 36)
-		(uuid "e7d97019-6f34-46d7-a311-f215640847db")
 	)
 	(segment
 		(start 89.35 164.5)
