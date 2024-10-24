@@ -2,7 +2,8 @@
 units:
   visual_x: 17.5
   visual_y: 16.5
-  mod_x_width: 1.25cx
+  mod_x_width: 1.25u-1.05
+  space_width: 2.25u-1.05
   px: cx + 4
   py: cy + 4
 
@@ -25,72 +26,60 @@ points:
             column_net: P020
         two:
           key:
-            spread: 1cx
             column_mark: 2
             column_net: P022
         three:
           key:
-            spread: 1cx
             column_mark: 3
             column_net: P024
         four:
           key:
-            spread: 1cx
             column_mark: 4
             column_net: P100
         five:
           key:
-            spread:  1cx
             column_mark: 5
             column_net: P011
         six:
           key:
-            spread:  1cx
             column_mark: 6
             column_net: P017
       rows:
         bottom:
-          padding: 1cy
           row_net: P113
         home:
-          padding: 1cy
           row_net: P115
         top:
-          padding: 1cy
           row_net: P002
         num:
-          padding: 1cy
           row_net: P029
     
     modrow:
       anchor:
-        shift: [100, -100]
-      key:
-        padding: 1cy
-        spread: 1cx
+        shift: [100, -100-u]
       columns:
         ctrl:
           key:
             width: mod_x_width
-            shift: [(mod_x_width-1cx)/2, -1cy]
+            shift: [(mod_x_width-1cx)/2, 0]
             column_mark: 1
             column_net: P020
         super:
           key:
             width: mod_x_width
-            shift: [(mod_x_width-1cx)*(3/2), -1cy]
+            shift: [(mod_x_width-1cx)*(3/2), 0]
             column_mark: 2
             column_net: P022
         alt:
           key:
             width: mod_x_width
-            shift: [(mod_x_width-1cx)*(5/2), -1cy]
+            shift: [(mod_x_width-1cx)*(5/2), 0]
             column_mark: 3
             column_net: P024
         space:
           key:
-            width: 2.25cx
-            shift: [(2.25cx-1cx)+(mod_x_width-1cx)/2, -1cy]
+            width: space_width
+            shift: [space_width-0.82u, 0]
             column_mark: 5
             column_net: P011
       rows:
@@ -133,9 +122,9 @@ outlines:
         - ref: matrix_six_num
           shift: [0.5px, 1.7py]
         - ref: modrow_space_modrow
-          shift: [1px, -0.5py]
+          shift: [1px, -1py]
         - ref: modrow_ctrl_modrow
-          shift: [-0.875px,-0.5py]
+          shift: [-0.875px,-1py]
   combo:
     - name: board
     - operation: subtract
@@ -234,15 +223,25 @@ pcbs:
       hole_top_center:
         what: mountinghole
         where:
-          ref: matrix_three_num
-          shift: [0.7cx, 1.2cy]
+          ref: matrix_two_num
+          shift: [0.3cx, 1.2cy]
       hole_top_right:
         what: mountinghole
         where:
           ref: matrix_six_num
-          shift: [-0.3cx, 0.7cy]
+          shift: [-0.3cx, 0.8cy]
       hole_bottom_left:
         what: mountinghole
         where:
           ref: modrow_ctrl_modrow
-          shift: [-0.8cx, -0.3cy]
+          shift: [-0.6cx, -0.75cy]
+      hole_bottom_center:
+        what: mountinghole
+        where:
+          ref: modrow_alt_modrow
+          shift: [-0.6cx, -0.75cy]
+      hole_bottom_right:
+        what: mountinghole
+        where:
+          ref: modrow_space_modrow
+          shift: [0.8cx, -0.75cy]

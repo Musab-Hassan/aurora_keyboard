@@ -517,10 +517,6 @@
       {
         "netclass": "Default",
         "pattern": "BAT"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "p*"
       }
     ]
   },
