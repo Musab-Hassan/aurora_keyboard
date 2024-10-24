@@ -345,3 +345,7 @@ pcbs:
         where:
           ref: modrow_right_arrow_modrow
           shift: [0.3cx, -0.75cy]
+cases:
+  top_plate:
+    - name: combo
+      extrude: 1.2
