@@ -287,7 +287,7 @@ pcbs:
         where:
           ref: matrix_two_num
           rotate: 180
-          shift: [0.7cx, 1.45cy]
+          shift: [0.5u+0.425, 1.45cy]
         params:
           SDA: P017
           SCL: P020

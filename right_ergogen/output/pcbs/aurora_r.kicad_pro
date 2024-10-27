@@ -528,9 +528,9 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "aurora_r.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "aurora_r.wrl"
     },
     "page_layout_descr_file": ""
   },
