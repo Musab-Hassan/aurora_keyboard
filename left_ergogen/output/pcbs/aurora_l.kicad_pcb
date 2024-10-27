@@ -3854,7 +3854,7 @@
           
 
         (module lib:niceView_headers (layer F.Cu) (tedit 5E1ADAC2)
-        (at 161.5 18.20000000000001 0) 
+        (at 166.25 18.20000000000001 0) 
 
                 
         (fp_text reference "niceView1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))

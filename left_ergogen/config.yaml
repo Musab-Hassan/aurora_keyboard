@@ -186,8 +186,8 @@ pcbs:
       nice_view:
         what: nice_view
         where:
-          ref: matrix_three_num
-          shift: [1.3cx, 1.45cy]
+          ref: matrix_four_num
+          shift: [0.5u-0.425, 1.45cy]
         params:
           SDA: P017
           SCL: P020
