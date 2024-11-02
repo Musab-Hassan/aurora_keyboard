@@ -1,5 +1,5 @@
 function combo_extrude_1_2_outline_fn(){
-    return new CSG.Path2D([[83.1368147,-138.0444508],[83.4944661,-9.1444508]]).appendArc([85.4944584,-7.15],{"radius":2,"clockwise":true,"large":false}).appendPoint([204.2362813,-7.15]).appendArc([206.2362346,-9.1636716],{"radius":2,"clockwise":true,"large":false}).appendPoint([205.3550785,-138.0636716]).appendArc([203.3551252,-140.05],{"radius":2,"clockwise":true,"large":false}).appendPoint([85.136807,-140.05]).appendArc([83.1368147,-138.0444508],{"radius":2,"clockwise":true,"large":false}).close().innerToCAG()
+    return new CSG.Path2D([[61.1381212,-132.7931524],[61.4931757,-29.0931524]]).appendArc([63.493164,-27.1],{"radius":2,"clockwise":true,"large":false}).appendPoint([204.233058,-27.1]).appendArc([206.2329868,-29.1168704],{"radius":2,"clockwise":true,"large":false}).appendPoint([205.3582286,-132.8168704]).appendArc([203.3582998,-134.8],{"radius":2,"clockwise":true,"large":false}).appendPoint([63.1381095,-134.8]).appendArc([61.1381212,-132.7931524],{"radius":2,"clockwise":true,"large":false}).close().innerToCAG()
 .subtract(
     new CSG.Path2D([[165.4165,-127.05],[172.4165,-127.05]]).appendPoint([172.4165,-113.05]).appendPoint([165.4165,-113.05]).appendPoint([165.4165,-127.05]).close().innerToCAG()
 .union(

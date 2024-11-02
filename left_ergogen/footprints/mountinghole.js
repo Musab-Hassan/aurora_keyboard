@@ -7,6 +7,6 @@ module.exports = {
       ${p.at /* parametric position */}   
       ${'' /* footprint reference */}
 
-      (pad "" np_thru_hole circle (at 0 0 90) (size 4.0 4.0) (drill 4.0) (layers *.Cu *.Mask F.SilkS) (clearance 0.3)))
+      (pad "" np_thru_hole circle (at 0 0 90) (size 6.0 6.0) (drill 6.0) (layers *.Cu *.Mask F.SilkS) (clearance 0.3)))
   `
 }
