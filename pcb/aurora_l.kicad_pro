@@ -260,7 +260,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P020"
+        "pattern": "P011"
       },
       {
         "netclass": "Default",
@@ -280,7 +280,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P022"
+        "pattern": "P100"
       },
       {
         "netclass": "Default",
@@ -320,7 +320,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P100"
+        "pattern": "P022"
       },
       {
         "netclass": "Default",
@@ -340,7 +340,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P011"
+        "pattern": "P020"
       },
       {
         "netclass": "Default",
@@ -392,10 +392,6 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P113"
-      },
-      {
-        "netclass": "Default",
         "pattern": "P115"
       },
       {
@@ -412,7 +408,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P8"
+        "pattern": "P113"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P010"
       },
       {
         "netclass": "Default",
@@ -420,7 +420,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P15"
+        "pattern": "P009"
       },
       {
         "netclass": "Default",
@@ -437,14 +437,6 @@
       {
         "netclass": "Default",
         "pattern": "P111"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P010"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P009"
       },
       {
         "netclass": "Default",
@@ -488,7 +480,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "C:/Users/Musab/Documents/keyboard chasis/left/aurora_l_pcb.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },

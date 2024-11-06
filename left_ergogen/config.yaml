@@ -23,11 +23,11 @@ points:
         one:
           key:
             column_mark: 1
-            column_net: P020
+            column_net: P011
         two:
           key:
             column_mark: 2
-            column_net: P022
+            column_net: P100
         three:
           key:
             column_mark: 3
@@ -35,24 +35,24 @@ points:
         four:
           key:
             column_mark: 4
-            column_net: P100
+            column_net: P022
         five:
           key:
             column_mark: 5
-            column_net: P011
+            column_net: P020
         six:
           key:
             column_mark: 6
             column_net: P017
       rows:
         bottom:
-          row_net: P113
-        home:
           row_net: P115
-        top:
+        home:
           row_net: P002
-        num:
+        top:
           row_net: P029
+        num:
+          row_net: P031
     
     modrow:
       anchor:
@@ -63,28 +63,28 @@ points:
             width: mod_x_width
             shift: [(mod_x_width-1cx)/2, 0]
             column_mark: 1
-            column_net: P020
+            column_net: P011
         super:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(3/2), 0]
             column_mark: 2
-            column_net: P022
+            column_net: P100
         alt:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(5/2), 0]
             column_mark: 3
-            column_net: P024
+            column_net: P022
         space:
           key:
             width: space_width
             shift: [space_width-0.82u, 0]
             column_mark: 5
-            column_net: P011
+            column_net: P017
       rows:
         modrow:
-          row_net: P031
+          row_net: P113
 outlines:
   2u_stabilizer:
     - operation: stack
@@ -121,8 +121,8 @@ outlines:
           shift: [-1.75px, 0.75py]
         - ref: matrix_six_num
           shift: [0.5px, 0.75py]
-        - ref: modrow_space_modrow
-          shift: [1px, -0.75py]
+        - ref: matrix_six_bottom
+          shift: [0.5px, -1u - 0.75py]
         - ref: modrow_ctrl_modrow
           shift: [-1.875px,-0.75py]
   combo:
@@ -149,7 +149,7 @@ pcbs:
         where: true
         adjust:
           rotate: 0
-          shift: [ 0, -8 ]
+          shift: [ 0, -10 ]
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
@@ -161,9 +161,9 @@ pcbs:
         adjust:
           shift: [ 0, -5 ]
         params:
-          din: "P8"
+          din: "P010"
           vcc: "VCC"
-          dout: "P15"
+          dout: "P009"
           gnd: "GND"
       rgb_led_rotate_odd:
         what: WS2812-2020
@@ -172,9 +172,9 @@ pcbs:
           rotate: -90
           shift: [ 0, -5 ]
         params:
-          din: "P8"
+          din: "P010"
           vcc: "VCC"
-          dout: "P15"
+          dout: "P009"
           gnd: "GND"
       nice_nano:
         what: nice_nano
@@ -191,9 +191,9 @@ pcbs:
           rotate: -90
           shift: [-1.4u, -0.5u]
         params:
-          SDA: P017
-          SCL: P020
-          CS: P006
+          SDA: P107
+          SCL: P102
+          CS: P101
       powerswitch:
         what: slider
         where:
