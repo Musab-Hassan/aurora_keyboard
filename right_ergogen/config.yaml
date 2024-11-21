@@ -23,15 +23,15 @@ points:
         one:
           key:
             column_mark: 1
-            column_net: P020
+            column_net: P106
         two:
           key:
             column_mark: 2
-            column_net: P022
+            column_net: P104
         three:
           key:
             column_mark: 3
-            column_net: P024
+            column_net: P011
         four:
           key:
             column_mark: 4
@@ -39,24 +39,24 @@ points:
         five:
           key:
             column_mark: 5
-            column_net: P011
+            column_net: P024
         six:
           key:
             column_mark: 6
-            column_net: P017
+            column_net: P022
         seven:
           key:
             column_mark: 7
-            column_net: P104
+            column_net: P020
         eight:
           key:
             column_mark: 8
-            column_net: P106
+            column_net: P017
       rows:
         top:
-          row_net: P002
-        num:
           row_net: P029
+        num:
+          row_net: P031
 
     enterrow:
       anchor:
@@ -65,15 +65,15 @@ points:
         one:
           key:
             column_mark: 1
-            column_net: P020
+            column_net: P106
         two:
           key:
             column_mark: 2
-            column_net: P022
+            column_net: P104
         three:
           key:
             column_mark: 3
-            column_net: P024
+            column_net: P011
         four:
           key:
             column_mark: 4
@@ -81,20 +81,20 @@ points:
         five:
           key:
             column_mark: 5
-            column_net: P011
+            column_net: P024
         six:
           key:
             column_mark: 6
-            column_net: P017
+            column_net: P022
         enter:
           key:
             shift: [0.5u, 0]
             width: 2u-1
             column_mark: 7
-            column_net: P104
+            column_net: P020
       rows:
         home:
-          row_net: P115
+          row_net: P002
 
     bottomrow:
       anchor:
@@ -103,15 +103,15 @@ points:
         one:
           key:
             column_mark: 1
-            column_net: P020
+            column_net: P106
         two:
           key:
             column_mark: 2
-            column_net: P022
+            column_net: P104
         three:
           key:
             column_mark: 3
-            column_net: P024
+            column_net: P011
         four:
           key:
             column_mark: 4
@@ -119,22 +119,22 @@ points:
         five:
           key:
             column_mark: 5
-            column_net: P011
+            column_net: P024
         six:
           key:
             column_mark: 6
-            column_net: P017
+            column_net: P022
         seven:
           key:
             column_mark: 7
-            column_net: P104
+            column_net: P020
         eight:
           key:
             column_mark: 8
-            column_net: P106
+            column_net: P017
       rows:
         bottom:
-          row_net: P113
+          row_net: P115
 
     modrow:
       anchor:
@@ -145,44 +145,44 @@ points:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(1/2), 0]
             column_mark: 5
-            column_net: P020
+            column_net: P106
             spread: 23.8125
         ctrl:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(3/2), 0]
             column_mark: 1
-            column_net: P022
+            column_net: P104
         super:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(5/2), 0]
             column_mark: 2
-            column_net: P100
+            column_net: P011
         alt:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(7/2), 0]
             column_mark: 3
-            column_net: P011
+            column_net: P100
         left_arrow:
           key:
             shift: [u, 0]
             column_mark: 4
-            column_net: P017
+            column_net: P022
         down_arrow:
           key:
             shift: [u, 0]
             column_mark: 5
-            column_net: P104
+            column_net: P020
         right_arrow:
           key:
             shift: [u, 0]
             column_mark: 6
-            column_net: P106
+            column_net: P017
       rows:
         modrow:
-          row_net: P031
+          row_net: P113
 outlines:
   2u_stabilizer:
     - operation: stack
@@ -216,13 +216,13 @@ outlines:
       fillet: 2
       points:
         - ref: matrix_one_num
-          shift: [-0.5px, 1.7py]
+          shift: [-0.5px, 0.75py]
         - ref: matrix_eight_num
-          shift: [0.75px, 1.7py]
+          shift: [1.75px, 0.75py]
         - ref: modrow_right_arrow_modrow
-          shift: [0.75px, -1py]
+          shift: [1.75px, -0.75py]
         - ref: modrow_space_modrow
-          shift: [-0.625px,-1py]
+          shift: [-0.61px, -0.75py]
   combo:
     - name: board
     - operation: subtract
@@ -247,7 +247,7 @@ pcbs:
         where: true
         adjust:
           rotate: 0
-          shift: [ 0, -8 ]
+          shift: [ 0, -10 ]
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
@@ -259,44 +259,54 @@ pcbs:
         adjust:
           shift: [ 0, -5 ]
         params:
-          din: "P8"
+          din: "P010"
           vcc: "VCC"
-          dout: "P15"
+          dout: "P009"
           gnd: "GND"
       rgb_led_rotate_odd:
         what: WS2812-2020
         where: [/^(matrix_.*_top).*/, /^(bottomrow_.*_bottom).*/]
         adjust:
-          rotate: -90
+          rotate: 90
           shift: [ 0, -5 ]
         params:
-          din: "P8"
+          din: "P010"
           vcc: "VCC"
-          dout: "P15"
+          dout: "P009"
           gnd: "GND"
       nice_nano:
         what: nice_nano
         where:
-          ref: matrix_seven_num
-          rotate: 180
-          shift: [0.85cx, 1.1cy]
+          ref: matrix_eight_num
+          shift: [1.3u, -0.15u]
+          rotate: -90
         params:
-          orientation: down
+          orientation: up
+      rotary:
+        what: rotary
+        params:
+          A: P006
+          B: GND
+          C: P008
+        where:
+          ref: matrix_eight_top
+          shift: [1.4u, -1u]
       nice_view:
         what: nice_view
         where:
-          ref: matrix_two_num
-          rotate: 180
-          shift: [0.5u+0.425, 1.45cy]
+          ref: matrix_eight_top
+          rotate: -90
+          shift: [1.4u, -1.5u]
         params:
-          SDA: P017
-          SCL: P020
-          CS: P006
+          SDA: P107
+          SCL: P102
+          CS: P101
       powerswitch:
         what: slider
         where:
-          ref: matrix_seven_num
-          shift: [1cx, 1.94cy]
+          ref: matrix_eight_top
+          rotate: 270
+          shift: [1.92u, -1.5u]
         params:
           from: RAW
           to: BAT
@@ -308,43 +318,38 @@ pcbs:
           from: GND
           to: RST
         where:
-          ref: matrix_seven_num
-          shift: [-0.3cx, 1.94cy]
+          ref: matrix_eight_top
+          rotate: 270
+          shift: [1.92u, -0.25u]
       jstph:
         what: jstph
         where:
-          ref: matrix_seven_num
-          shift: [0.4cx, 1.9cy]
-          rotate: 90
+          ref: matrix_eight_top
+          shift: [1.8u, -0.75u]
         params:
           pos: BAT
           neg: GND
           side: B
-      hole_top_center:
+      hole_top_left:
         what: mountinghole
         where:
-          ref: matrix_three_num
-          shift: [0.3cx, 1.2cy]
+          ref: matrix_one_num
+          shift: [0.5u, -0.5u]
       hole_top_right:
         what: mountinghole
         where:
-          ref: matrix_six_num
-          shift: [0.5cx, 1.2cy]
-      hole_bottom_center:
-        what: mountinghole
-        where:
-          ref: modrow_alt_modrow
-          shift: [-0.2cx, -0.75cy]
+          ref: matrix_eight_num
+          shift: [-0.5u, -0.5u]
       hole_bottom_left:
         what: mountinghole
         where:
-          ref: modrow_space_modrow
-          shift: [0.2cx, -0.75cy]
+          ref: bottomrow_one_bottom
+          shift: [0.5u, 0.5u]
       hole_bottom_right:
         what: mountinghole
         where:
-          ref: modrow_right_arrow_modrow
-          shift: [0.3cx, -0.75cy]
+          ref: bottomrow_eight_bottom
+          shift: [-0.5u, -0.5u]
 cases:
   top_plate:
     - name: combo
