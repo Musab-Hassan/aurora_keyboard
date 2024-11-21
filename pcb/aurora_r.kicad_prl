@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -77,7 +77,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "aurora_l.kicad_prl",
+    "filename": "aurora_r.kicad_prl",
     "version": 3
   },
   "project": {
