@@ -286,8 +286,10 @@ pcbs:
         what: rotary
         params:
           A: P006
-          B: GND
-          C: P008
+          C: GND
+          B: P008
+          from: P111
+          to: GND
         where:
           ref: matrix_eight_top
           shift: [1.4u, -1u]
