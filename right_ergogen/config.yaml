@@ -288,8 +288,8 @@ pcbs:
           A: P006
           C: GND
           B: P008
-          from: P111
-          to: GND
+          from: P002
+          to: P017
         where:
           ref: matrix_eight_top
           shift: [1.4u, -1u]
