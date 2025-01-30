@@ -61,6 +61,7 @@ This list includes all external parts required, excluding the PCB and 3D-printed
 | 1N4148W SMD diodes | 70 | [Typeractive](https://typeractive.xyz/products/smd-diodes) |
 | MX Hotswap sockets | 70 | [Amazon](https://www.amazon.ca/dp/B0972HB9GY) |
 | 750 mAh Thin LiPo Battery | 2 | [Typeractive](https://typeractive.xyz/products/lithium-battery-750mah) |
+| JST PH 2.0mm Battery Jack | 2 | [Typeractive](https://typeractive.xyz/products/battery-jack) |
 | EC11 Encoder | 1 | [Digikey](https://www.digikey.ca/en/products/detail/alps-alpine/EC11E15244B2/19529170) |
 | 0.08" Acrylic Sheet (8" x 12") | 1 | [Amazon](https://www.amazon.ca/dp/B0BK3DN8JR) |
 | Alps Micro Switch | 2 | [TyperActive](https://typeractive.xyz/products/power-switch) |
@@ -84,10 +85,12 @@ This list includes all external parts required, excluding the PCB and 3D-printed
 
 ### Required Tools
 
-- Soldering Iron
-- Solder and Flux
+- Soldering iron (preferably with temperature control)
+- Solder (preferably nothing larger than 0.8mm)
+- Flux (optional but recommended)
+- Tweezers
+- FDM or Resin 3D Printer or at least access to one
 - Screw driver with the appropriate bit depending on your screws
-- FDM or Resin 3D Printer
 
 ## License
 
