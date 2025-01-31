@@ -1,6 +1,11 @@
-# Aurora Keyboard
+# Aurora Keyboard ⌨️
 
-The Aurora keyboard is a beautifully designed fully split, wireless, ergonomic keyboard that you can build yourself. The full build guide can be found in `docs/`.
+The Aurora keyboard is a beautifully designed fully split, wireless, ergonomic keyboard that you can build yourself. 
+
+**The full build guide can be found in `docs/`.**
+
+![Aurora Keyboard](./images/left_view.jpg)
+![Aurora Keyboard](./images/top_view.jpg)
 
 **Key Features:**
 
@@ -11,6 +16,7 @@ The Aurora keyboard is a beautifully designed fully split, wireless, ergonomic k
 - Support for any MX switches and keycaps
 - OLED Screen (nice!view)
 - Volume knob
+- Hotswappable
 - ZMK Firmware
 
 ## Repo Contents
