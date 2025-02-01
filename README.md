@@ -2,7 +2,7 @@
 
 The Aurora keyboard is a beautifully designed fully split, wireless, ergonomic keyboard that you can build yourself.
 
-**The full build guide can be found in `docs/`.**
+**The full build guide can be found in `build_guide/`.**
 
 ![Aurora Keyboard](./images/left_view.jpg)
 ![Aurora Keyboard](./images/top_view.jpg)
