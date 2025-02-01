@@ -1,6 +1,6 @@
-# Aurora Keyboard ⌨️
+# ![Aurora Keyboard ⌨️](./images/banner.jpg)
 
-The Aurora keyboard is a beautifully designed fully split, wireless, ergonomic keyboard that you can build yourself. 
+The Aurora keyboard is a beautifully designed fully split, wireless, ergonomic keyboard that you can build yourself.
 
 **The full build guide can be found in `docs/`.**
 
@@ -84,6 +84,7 @@ This list includes all external parts required, excluding the PCB and 3D-printed
 | Part | Quantity | Why | Where I got them from |
 | --- | --- | --- | --- |
 | 3 Pin Magnetic Pogo Connector  | 2 | Allows dongle to magnetically snap in and switch to bluetooth | [Amazon](https://www.amazon.ca/dp/B0CPJHQK2F) |
+| Rubber Feet  | 8 | Prevents keyboard from slipping | [Amazon](https://www.amazon.ca/dp/B07CNQC695) |
 | Neodymium Bar Magnets (60mm x 10mm x 3mm) | 2 | Allows the keyboard to magnetically snap when connected together (case plate has a slot for magnets) | [Amazon](https://www.amazon.ca/dp/B09TKMRRRC) |
 | Keyboard Lube or Di-electric grease | 1 | If you want your keyboard to sound good you can lube the switches for it to sound even better (not recommended unless you are very ambitious about keyboards) | [Amazon](https://www.amazon.ca/dp/B09B9RL1QQ) |
 | Neoprene Foam Sheet | 1 | Allows you to dampen keyboard sound so it sounds better. Again not recommended unless you really like dampened keyboard sounds. | [Amazon](https://www.amazon.ca/dp/B0B88BLNGQ) |
