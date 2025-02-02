@@ -50,7 +50,7 @@ Refer to the build guide for more details.
 
 The PCB layout and unrouted PCB were generated using Ergogen. Since the two halves have different layouts, separate folders exist for each. My Ergogen skills were not sufficient to configure both in one file.
 
-After Ergogen, the PCB is routed in KiCAD or Altium (I used KiCAD). Since the keyboard exposes both PCB ends, I kept the routing clean. Routed PCB files are in the `pcb` directory and are fabrication-ready. Export them to `.gerber` files before ordering.
+After Ergogen, the PCB was routed in KiCAD. Routed PCB files are in the `pcb` directory and are fabrication-ready. Download the zip files from the `pcb/gerber` directory and then order them for fabrication.
 
 You can order the PCBs from manufacturers such as PCBWay or JLCPCB.
 
