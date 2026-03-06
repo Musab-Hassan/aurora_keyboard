@@ -370,21 +370,10 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
-      rgb_led_even:
+      rgb_led:
         what: WS2812-2020
-        where: [/^(left_matrix_.*_num).*/, /^(left_matrix_.*_home).*/, /^(left_modrow).*/]
+        where: [/^(left_matrix_.*_num).*/, /^(left_matrix_.*_home).*/, /^(left_modrow).*/, /^(left_matrix_.*_top).*/, /^(left_matrix_.*_bottom).*/]
         adjust:
-          shift: [ 0, -5 ]
-        params:
-          din: "P010"
-          vcc: "VCC"
-          dout: "P009"
-          gnd: "GND"
-      rgb_led_rotate_odd:
-        what: WS2812-2020
-        where: [/^(left_matrix_.*_top).*/, /^(left_matrix_.*_bottom).*/]
-        adjust:
-          rotate: -90
           shift: [ 0, -5 ]
         params:
           din: "P010"
@@ -454,21 +443,10 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
-      rgb_led_even:
+      rgb_led:
         what: WS2812-2020
-        where: [/^(right_matrix_.*_num).*/, /^(right_enterrow_.*_home).*/, /^(right_modrow_.*_modrow).*/]
+        where: [/^(right_matrix_.*_num).*/, /^(right_enterrow_.*_home).*/, /^(right_modrow_.*_modrow).*/, /^(right_matrix_.*_top).*/, /^(right_bottomrow_.*_bottom).*/]
         adjust:
-          shift: [ 0, -5 ]
-        params:
-          din: "P010"
-          vcc: "VCC"
-          dout: "P009"
-          gnd: "GND"
-      rgb_led_rotate_odd:
-        what: WS2812-2020
-        where: [/^(right_matrix_.*_top).*/, /^(right_bottomrow_.*_bottom).*/]
-        adjust:
-          rotate: 90
           shift: [ 0, -5 ]
         params:
           din: "P010"
