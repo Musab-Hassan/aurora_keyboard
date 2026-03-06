@@ -63,28 +63,28 @@ points:
             width: mod_x_width
             shift: [(mod_x_width-1cx)/2, 0]
             column_mark: 1
-            column_net: P011
+            column_net: P01
         super:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(3/2), 0]
             column_mark: 2
-            column_net: P100
+            column_net: P02
         alt:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(5/2), 0]
             column_mark: 3
-            column_net: P022
+            column_net: P03
         space:
           key:
             width: space_width
             shift: [space_width-0.82u, 0]
             column_mark: 5
-            column_net: P017
+            column_net: P05
       rows:
         modrow:
-          row_net: P113
+          row_net: P11
 
     # RIGHT SIDE ZONES
     right_matrix:
@@ -94,40 +94,40 @@ points:
         one:
           key:
             column_mark: 1
-            column_net: P106
+            column_net: P01
         two:
           key:
             column_mark: 2
-            column_net: P104
+            column_net: P02
         three:
           key:
             column_mark: 3
-            column_net: P011
+            column_net: P03
         four:
           key:
             column_mark: 4
-            column_net: P100
+            column_net: P04
         five:
           key:
             column_mark: 5
-            column_net: P024
+            column_net: P05
         six:
           key:
             column_mark: 6
-            column_net: P022
+            column_net: P06
         seven:
           key:
             column_mark: 7
-            column_net: P020
+            column_net: P07
         eight:
           key:
             column_mark: 8
-            column_net: P017
+            column_net: P08
       rows:
         top:
-          row_net: P029
+          row_net: P10
         num:
-          row_net: P031
+          row_net: P09
 
     right_enterrow:
       anchor:
@@ -136,36 +136,36 @@ points:
         one:
           key:
             column_mark: 1
-            column_net: P106
+            column_net: P01
         two:
           key:
             column_mark: 2
-            column_net: P104
+            column_net: P02
         three:
           key:
             column_mark: 3
-            column_net: P011
+            column_net: P03
         four:
           key:
             column_mark: 4
-            column_net: P100
+            column_net: P04
         five:
           key:
             column_mark: 5
-            column_net: P024
+            column_net: P05
         six:
           key:
             column_mark: 6
-            column_net: P022
+            column_net: P06
         enter:
           key:
             shift: [0.5u, 0]
             width: 2u-1
             column_mark: 7
-            column_net: P020
+            column_net: P07
       rows:
         home:
-          row_net: P002
+          row_net: P11
 
     right_bottomrow:
       anchor:
@@ -174,38 +174,38 @@ points:
         one:
           key:
             column_mark: 1
-            column_net: P106
+            column_net: P01
         two:
           key:
             column_mark: 2
-            column_net: P104
+            column_net: P02
         three:
           key:
             column_mark: 3
-            column_net: P011
+            column_net: P03
         four:
           key:
             column_mark: 4
-            column_net: P100
+            column_net: P04
         five:
           key:
             column_mark: 5
-            column_net: P024
+            column_net: P05
         six:
           key:
             column_mark: 6
-            column_net: P022
+            column_net: P06
         seven:
           key:
             column_mark: 7
-            column_net: P020
+            column_net: P07
         eight:
           key:
             column_mark: 8
-            column_net: P017
+            column_net: P08
       rows:
         bottom:
-          row_net: P115
+          row_net: P12
 
     right_modrow:
       anchor:
@@ -216,44 +216,44 @@ points:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(1/2), 0]
             column_mark: 5
-            column_net: P106
+            column_net: P01
             spread: 23.8125
         ctrl:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(3/2), 0]
             column_mark: 1
-            column_net: P104
+            column_net: P02
         super:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(5/2), 0]
             column_mark: 2
-            column_net: P011
+            column_net: P03
         alt:
           key:
             width: mod_x_width
             shift: [(mod_x_width-1cx)*(7/2), 0]
             column_mark: 3
-            column_net: P100
+            column_net: P04
         left_arrow:
           key:
             shift: [u, 0]
             column_mark: 4
-            column_net: P022
+            column_net: P05
         down_arrow:
           key:
             shift: [u, 0]
             column_mark: 5
-            column_net: P020
+            column_net: P06
         right_arrow:
           key:
             shift: [u, 0]
             column_mark: 6
-            column_net: P017
+            column_net: P07
       rows:
         modrow:
-          row_net: P113
+          row_net: P13
 
 outlines:
   # LEFT SIDE OUTLINES

@@ -124,24 +124,20 @@
 (net 29 "six_top")
 (net 30 "six_num")
 (net 31 "ctrl_modrow")
-(net 32 "P011")
-(net 33 "super_modrow")
-(net 34 "P100")
-(net 35 "alt_modrow")
-(net 36 "P022")
-(net 37 "space_modrow")
-(net 38 "P017")
-(net 39 "P07")
-(net 40 "P08")
-(net 41 "P09")
-(net 42 "P10")
-(net 43 "P113")
-(net 44 "P010")
-(net 45 "VCC")
-(net 46 "P009")
-(net 47 "GND")
-(net 48 "RAW")
-(net 49 "BAT")
+(net 32 "super_modrow")
+(net 33 "alt_modrow")
+(net 34 "space_modrow")
+(net 35 "P07")
+(net 36 "P08")
+(net 37 "P09")
+(net 38 "P10")
+(net 39 "P11")
+(net 40 "P010")
+(net 41 "VCC")
+(net 42 "P009")
+(net 43 "GND")
+(net 44 "RAW")
+(net 45 "BAT")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -182,18 +178,14 @@
 (add_net "six_top")
 (add_net "six_num")
 (add_net "ctrl_modrow")
-(add_net "P011")
 (add_net "super_modrow")
-(add_net "P100")
 (add_net "alt_modrow")
-(add_net "P022")
 (add_net "space_modrow")
-(add_net "P017")
 (add_net "P07")
 (add_net "P08")
 (add_net "P09")
 (add_net "P10")
-(add_net "P113")
+(add_net "P11")
 (add_net "P010")
 (add_net "VCC")
 (add_net "P009")
@@ -1274,7 +1266,7 @@
         
         
         (pad 1 smd rect (at -7.085 -2.54 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 31 "ctrl_modrow"))
-        (pad 2 smd rect (at 5.842 -5.08 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 32 "P011"))
+        (pad 2 smd rect (at 5.842 -5.08 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 2 "P01"))
         )
         
 
@@ -1316,8 +1308,8 @@
         (pad "" np_thru_hole circle (at -3.81 -2.54) (size 3 3) (drill 3) (layers *.Cu *.Mask))
         
         
-        (pad 1 smd rect (at -7.085 -2.54 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 33 "super_modrow"))
-        (pad 2 smd rect (at 5.842 -5.08 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 34 "P100"))
+        (pad 1 smd rect (at -7.085 -2.54 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 32 "super_modrow"))
+        (pad 2 smd rect (at 5.842 -5.08 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 7 "P02"))
         )
         
 
@@ -1359,8 +1351,8 @@
         (pad "" np_thru_hole circle (at -3.81 -2.54) (size 3 3) (drill 3) (layers *.Cu *.Mask))
         
         
-        (pad 1 smd rect (at -7.085 -2.54 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 35 "alt_modrow"))
-        (pad 2 smd rect (at 5.842 -5.08 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 36 "P022"))
+        (pad 1 smd rect (at -7.085 -2.54 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 33 "alt_modrow"))
+        (pad 2 smd rect (at 5.842 -5.08 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 12 "P03"))
         )
         
 
@@ -1402,8 +1394,8 @@
         (pad "" np_thru_hole circle (at -3.81 -2.54) (size 3 3) (drill 3) (layers *.Cu *.Mask))
         
         
-        (pad 1 smd rect (at -7.085 -2.54 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 37 "space_modrow"))
-        (pad 2 smd rect (at 5.842 -5.08 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 38 "P017"))
+        (pad 1 smd rect (at -7.085 -2.54 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 34 "space_modrow"))
+        (pad 2 smd rect (at 5.842 -5.08 0) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 22 "P05"))
         )
         
 
@@ -1434,13 +1426,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 1 "one_bottom"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 1 "one_bottom"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P07"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "P07"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 1 "one_bottom"))
     )
   
@@ -1473,13 +1465,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 3 "one_home"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 3 "one_home"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 40 "P08"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "P08"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 3 "one_home"))
     )
   
@@ -1512,13 +1504,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 4 "one_top"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 4 "one_top"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 41 "P09"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "P09"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 4 "one_top"))
     )
   
@@ -1551,13 +1543,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 5 "one_num"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 5 "one_num"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "P10"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 38 "P10"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 5 "one_num"))
     )
   
@@ -1590,13 +1582,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 6 "two_bottom"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 6 "two_bottom"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P07"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "P07"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 6 "two_bottom"))
     )
   
@@ -1629,13 +1621,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 8 "two_home"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 8 "two_home"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 40 "P08"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "P08"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 8 "two_home"))
     )
   
@@ -1668,13 +1660,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 9 "two_top"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 9 "two_top"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 41 "P09"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "P09"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 9 "two_top"))
     )
   
@@ -1707,13 +1699,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 10 "two_num"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 10 "two_num"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "P10"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 38 "P10"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 10 "two_num"))
     )
   
@@ -1746,13 +1738,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 11 "three_bottom"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 11 "three_bottom"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P07"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "P07"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 11 "three_bottom"))
     )
   
@@ -1785,13 +1777,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 13 "three_home"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 13 "three_home"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 40 "P08"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "P08"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 13 "three_home"))
     )
   
@@ -1824,13 +1816,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 14 "three_top"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 14 "three_top"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 41 "P09"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "P09"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 14 "three_top"))
     )
   
@@ -1863,13 +1855,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 15 "three_num"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 15 "three_num"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "P10"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 38 "P10"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 15 "three_num"))
     )
   
@@ -1902,13 +1894,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 16 "four_bottom"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 16 "four_bottom"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P07"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "P07"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 16 "four_bottom"))
     )
   
@@ -1941,13 +1933,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 18 "four_home"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 18 "four_home"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 40 "P08"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "P08"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 18 "four_home"))
     )
   
@@ -1980,13 +1972,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 19 "four_top"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 19 "four_top"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 41 "P09"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "P09"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 19 "four_top"))
     )
   
@@ -2019,13 +2011,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 20 "four_num"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 20 "four_num"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "P10"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 38 "P10"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 20 "four_num"))
     )
   
@@ -2058,13 +2050,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 21 "five_bottom"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 21 "five_bottom"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P07"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "P07"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 21 "five_bottom"))
     )
   
@@ -2097,13 +2089,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 23 "five_home"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 23 "five_home"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 40 "P08"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "P08"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 23 "five_home"))
     )
   
@@ -2136,13 +2128,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 24 "five_top"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 24 "five_top"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 41 "P09"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "P09"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 24 "five_top"))
     )
   
@@ -2175,13 +2167,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 25 "five_num"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 25 "five_num"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "P10"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 38 "P10"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 25 "five_num"))
     )
   
@@ -2214,13 +2206,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 26 "six_bottom"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P07"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "P07"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 26 "six_bottom"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P07"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "P07"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 26 "six_bottom"))
     )
   
@@ -2253,13 +2245,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 28 "six_home"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 40 "P08"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "P08"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 28 "six_home"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 40 "P08"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "P08"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 28 "six_home"))
     )
   
@@ -2292,13 +2284,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 29 "six_top"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 41 "P09"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "P09"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 29 "six_top"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 41 "P09"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "P09"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 29 "six_top"))
     )
   
@@ -2331,13 +2323,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 30 "six_num"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "P10"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 38 "P10"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 30 "six_num"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "P10"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 38 "P10"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 30 "six_num"))
     )
   
@@ -2370,13 +2362,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "P113"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P11"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 31 "ctrl_modrow"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "P113"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P11"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 31 "ctrl_modrow"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "P113"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P11"))
         (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 31 "ctrl_modrow"))
     )
   
@@ -2409,14 +2401,14 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "P113"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 33 "super_modrow"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "P113"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 33 "super_modrow"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P11"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 32 "super_modrow"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P11"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 32 "super_modrow"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "P113"))
-        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 33 "super_modrow"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P11"))
+        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 32 "super_modrow"))
     )
   
     
@@ -2448,14 +2440,14 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "P113"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "alt_modrow"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "P113"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "alt_modrow"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P11"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 33 "alt_modrow"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P11"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 33 "alt_modrow"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "P113"))
-        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "alt_modrow"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P11"))
+        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 33 "alt_modrow"))
     )
   
     
@@ -2487,14 +2479,14 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "P113"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "space_modrow"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "P113"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "space_modrow"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "P11"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 34 "space_modrow"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "P11"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 34 "space_modrow"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "P113"))
-        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "space_modrow"))
+        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "P11"))
+        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 34 "space_modrow"))
     )
   
     
@@ -2511,15 +2503,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2555,15 +2542,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2599,15 +2581,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2643,15 +2620,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2687,15 +2659,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2731,15 +2698,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2775,15 +2737,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2819,15 +2776,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2863,15 +2815,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2907,15 +2854,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2951,15 +2893,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -2995,15 +2932,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3039,15 +2971,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3083,15 +3010,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3127,15 +3049,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3171,15 +3088,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 0) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3215,15 +3127,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3259,15 +3166,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3303,15 +3205,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3347,15 +3244,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3391,15 +3283,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3435,15 +3322,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3479,15 +3361,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3523,15 +3400,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3567,15 +3439,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3611,15 +3478,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3655,15 +3517,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3699,15 +3556,10 @@
 (fp_text value WS2812 (at 4.581 1.88303 0) (layer F.Fab)
   (effects (font (size 0.64 0.64) (thickness 0.15)))
 )
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-
-(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 47 "GND"))
-(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 46 "P009"))
-(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 45 "VCC"))
-(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) (net 44 "P010"))
+(pad 3 smd rect (at -0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 42 "P009"))
+(pad 4 smd rect (at -0.915 0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 43 "GND"))
+(pad 1 smd rect (at 0.915 0.55  -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 40 "P010"))
+(pad 2 smd rect (at 0.915 -0.55 -90) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) (net 41 "VCC"))
 
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
@@ -3758,8 +3610,8 @@
             (pad "" np_thru_hole circle (at -1.5 0) (size 1 1) (drill 0.9) (layers *.Cu *.Mask))
 
             
-            (pad 1 smd rect (at -2.25 2.075 90) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask) (net 48 "RAW"))
-            (pad 2 smd rect (at 0.75 2.075 90) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask) (net 49 "BAT"))
+            (pad 1 smd rect (at -2.25 2.075 90) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask) (net 44 "RAW"))
+            (pad 2 smd rect (at 0.75 2.075 90) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask) (net 45 "BAT"))
             (pad 3 smd rect (at 2.25 2.075 90) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask))
             
             
@@ -3795,8 +3647,8 @@
         (fp_line (start -1 1.5) (end -1 2.0) (layer B.SilkS) (width 0.15))
         (fp_line (start -1.25 1.75) (end -0.75 1.75) (layer B.SilkS) (width 0.15))
 
-        (pad 1 thru_hole rect (at -1 0 270) (size 1.2 1.7) (drill 0.75) (layers *.Cu *.Mask) (net 49 "BAT"))
-        (pad 2 thru_hole oval (at 1 0 270) (size 1.2 1.7) (drill 0.75) (layers *.Cu *.Mask) (net 47 "GND"))
+        (pad 1 thru_hole rect (at -1 0 270) (size 1.2 1.7) (drill 0.75) (layers *.Cu *.Mask) (net 45 "BAT"))
+        (pad 2 thru_hole oval (at 1 0 270) (size 1.2 1.7) (drill 0.75) (layers *.Cu *.Mask) (net 43 "GND"))
             
     )
     

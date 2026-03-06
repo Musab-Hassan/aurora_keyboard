@@ -33,11 +33,6 @@ ${'' /* footprint reference */}
 (pad 1 smd rect (at 0.915 0.55  ${p.rot}) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) ${p.din.str})
 (pad 2 smd rect (at 0.915 -0.55 ${p.rot}) (size 0.7 0.7) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102) ${p.vcc.str})
 
-(pad 3 smd rect (at -0.915 -0.55 ${p.rot}) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) ${p.gnd.str})
-(pad 4 smd rect (at -0.915 0.55 ${p.rot}) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) ${p.dout.str})
-(pad 1 smd rect (at 0.915 0.55  ${p.rot}) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) ${p.vcc.str})
-(pad 2 smd rect (at 0.915 -0.55 ${p.rot}) (size 0.7 0.7) (layers B.Cu B.Mask B.Paste) (solder_mask_margin 0.102) ${p.din.str})
-
 (fp_line (start 1.1 1.0) (end -1.1 1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 1.0) (end -1.1 -1.0) (layer F.Fab) (width 0.127))
 (fp_line (start -1.1 -1.0) (end 1.1 -1.0) (layer F.Fab) (width 0.127))
