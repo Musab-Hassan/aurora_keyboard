@@ -351,7 +351,7 @@ pcbs:
   aurora_l:
     outlines:
       main:
-        outline: left_combo
+        outline: left_board
     footprints:
       mx-hotswap:
         what: mx
@@ -435,7 +435,7 @@ pcbs:
   aurora_r:
     outlines:
       main:
-        outline: right_combo
+        outline: right_board
     footprints:
       mx-hotswap:
         what: mx
